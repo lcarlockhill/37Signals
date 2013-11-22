@@ -51,20 +51,32 @@ table {
 
 /* The Following CSS is mine */
 
+
+
+
 /*Body, Misc*/
 
+
+
+
 html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-   
-    font: normal 0.9em Lucida Grande;
-    color: #000;
+
+
+    	height: 100%;
+    	padding: 0;
+    	margin: 0;
+   	overflow-x:scroll;
+    	font: normal 0.9em Lucida Grande;
+    	color: #000;
+	text-align:center;
 } 
 
 
 
 /*Text*/
+
+
+
 
 h5{
 
@@ -82,19 +94,16 @@ h4{
 
 	color:#c00;
 	font-family: Lucida Grande, Ludida Sans Unicode, Verdana;
-	
-
 	margin: 15px 0 10px;
 	font-size:14px;
 	text-align:center;
+
 }
 
 span.label{
 
 	color:#369;
 	font-family: Lucida Grande, Ludida Sans Unicode, Verdana;
-	
-
 	margin: 15px 0 0 15px;
 	font-size:21px;
 	font-weight:bold;
@@ -104,10 +113,7 @@ span.label{
 
 }
 
-
-
 h1{
-
 	color:#232323;
 	font-family: CrimsonSemibold, Times New Roman, Georgia, serif;
 	margin:0 auto;
@@ -122,54 +128,111 @@ h1{
 	display:block;
 	text-align:center;
 	
-	
-
-
 }
 
 
-
-
 sup{
+
 	font-size:7px;
 	text-decoration:none;
 	color:#999;
 	vertical-align: super;
-}
 
+}
 
 .blurb{
 
 	color:#222;
 	font-family: Lucida Grande, Ludida Sans Unicode, Verdana;
-	
-
 	margin-top: 15px;
 	font-size:14px;
 	width:160px;
 	height:38px;
-	
-
 	text-align:center;
-	
-
 	margin-left: 10px;
-
 	margin-right: 15px;
 
 }
 
 
+#hover-bc-hg, #hover-hr-hg, #hover-cf-hg {
+
+	font-size: 44px;
+	letter-spacing: -1px;
+
+}
+
+
+#hover-bc-shg, #hover-hr-shg, #hover-cf-shg {
+
+	font-size: 15px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	padding-top: 20px;
+	line-height: 1.4em;
+
+}
+
+
+#hover-bc-hg span, #hover-hr-hg span, #hover-cf-hg span {
+
+	color: #369;
+
+}
+
+
+.hover-bc, .hover-hr, .hover-cf {
+	
+	display: none;
+
+}
+
+
+#arrow-bc {
+
+   	position: relative;
+	right: 146px;
+	top: 66px;
+	margin-top: -50px;
+
+}
+
+
+#arrow-hr {
+
+	position: relative;
+	left: 85px;
+	top: 64px;
+	margin-top: -50px;
+
+}
+
+
+#arrow-cf {
+
+	position: relative;
+	left: 157px;
+	top: 65px;
+	margin-top: -50px;3
+
+}
+
+
+
 /*Top Nav*/
 
+
+
 nav{
+	
 	background-color: white;
 	min-width: 100%;
 	white-space: nowrap;
 	height:60px;
+
 }
 
 nav ul li {
+
 	float:right;
 	display: inline-block;
 	padding: 28px 10px 8px 16px;
@@ -179,21 +242,18 @@ nav ul li {
 
 }
 
-
 nav ul li:first-child{
-margin-left:27px;
-float:left;
+	margin-left:27px;
+	float:left;
 
 }
 
 nav ul li a.signin {
-color: #18AFE0;
-text-decoration:none;
-margin-right:37px;
+	color: #18AFE0;
+	text-decoration:none;
+	margin-right:37px;
+
 }
-
-
-
 
 nav ul li a.signin:hover {
 	text-decoration: none;
@@ -203,9 +263,8 @@ nav ul li a.signin:hover {
 
 nav ul li a.signin.selected {
 	color: #369;
+
 }
-
-
 
 nav ul li a {
 	text-decoration: none;
@@ -221,72 +280,78 @@ nav ul li a:hover {
 
 nav ul li a.selected {
 	color: #18AFE0;
+
 }
-
-
-
-
-
 
 
 
 /*37 Signals logo*/
 
 
-#main-logo {
 
+#main-logo {
 
 	clear: both;
 	padding:30px 0 0 20px;
 	margin: 0 auto;
 	display: block;
- 
-    	}
-
-
-
+}
 
 
 
 /*Container Boxes*/
 
+
+
 div.three_boxes{
 
-	
-    display: inline-block;
-    padding: 22px 0 20px 60px;
-    
-
-   text-align:center;
-    padding-right: 20px;
-
-
-    margin-left: 33%;
-
-   
+	display: inline-block;
+    	padding: 22px 0 20px 60px; 
+    	padding-right: 20px;  
 
 }
 
+#bc{
 
+	height:248px;	
+	width:182px;
+	padding:20px 10px 10px;
+	border:1px solid #e8e8e8;
+	border-radius: 5px;
+	margin:10px 20px;
+	background:#efefef;
+	text-align:center;
+	display:inline-block;
 
-
-
-
-
-
-div.bc{
-
-height:248px;	
-width:182px;
-padding:20px 10px 10px;
-border:1px solid #e8e8e8;
-border-radius: 5px;
-margin:10px 20px;
-background:#efefef;
-text-align:center;
-display:inline-block;
 }
 
+#hr{
+
+	height:248px;	
+	width:182px;
+	padding:20px 10px 10px;
+	border:1px solid #e8e8e8;
+	border-radius: 5px;
+	margin:10px 20px;
+	background:#efefef;
+	text-align:center;
+	display:inline-block;
+
+}
+
+#cf{
+
+	height:248px;	
+	width:182px;
+	padding:20px 10px 10px;
+	border:1px solid #e8e8e8;
+	border-radius: 5px;
+	margin:10px 20px;
+	background:#efefef;
+	text-align:center;
+	display:inline-block;
+
+}
 
 
 
@@ -295,7 +360,7 @@ display:inline-block;
 
 
 hr{
-	
+
 	clear:both;
 	background-image: url(img-hr.png);
 	border:none;
