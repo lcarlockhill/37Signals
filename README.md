@@ -1,5 +1,4 @@
 37Signals
 =========
 
-Thinkful Project
- This is the first Thinkful recreation of the 37signals website.
+Thinkful Project:  This project requires JQuery and Javascript.
