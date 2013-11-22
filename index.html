@@ -1,35 +1,40 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<title>Hill 37 Signals</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+	<title>Hill's 37signals: Web-based collaboration apps for small business</title>
+
 </head>
+
+
+
 <body>
+
 
 
 <!--Top Nav-->
 
 
-<nav>
 
+    <nav>
 
-	<ul>
+	   <ul>
 
-		<li><a href="#">Happy Sunday</a></li>
-		<li><a href="#" class="signin">Sign in</a></li>
-		<li><a href="#">System Status</a></li>
-		<li><a href="#">Follow Us on Twitter</a></li>
-		<li><a href="#">Our Story</a></li>
-		<li><a href="#">Company blog</a></li>
-		
-		
-		
-		
+		  <li id="dow"></li>
+		  <li><a href="https://launchpad.37signals.com/" class="signin">Sign in</a></li>
+		  <li><a href="http://status.37signals.com/">System Status</a></li>
+		  <li><a href="http://twitter.com/37signals">Follow Us on Twitter</a></li>
+		  <li><a href="http://37signals.com/about">Our Story</a></li>
+		  <li><a href="http://37signals.com/svn">Company blog</a></li>
+						
+        </ul>
 
-</ul>
-
-
-</nav>
+    </nav>
 
 
 
@@ -37,69 +42,82 @@
 
 
 
-
-<div class="wrapper">
+    <div class="wrapper">
 
         <div class="logo">
 
-             <img src="logo-37s-large.png" alt="37signals" id="main-logo" width="169" height="39" border="0" >
-           
-  
+             <img src="logo-37s-large.png" alt="37signals" id="main-logo" width="169" height="39">
+             
         </div>
-
 	   
+	   
+	   
+<!--Default Headlines-->
+	   
+	   
+	   
+ 	    <div class="headline">
 
- 	      <div class="headline">
-
-
-        	<h1 class="hline" width="825" width="120" border="0" >Making collaboration productive and enjoyable for people every day.</h1>
+        	<h1 class="hline" width="825">Making collaboration productive and enjoyable for people every day.</h1>
         	<h5>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h5>
 
-            </div>
 
 
-</div>
+<!--Hovering and Toggle-->
+
+
+			
+			<h1 class="hover-bc" id="hover-bc-hg"><a href="#"><span>Basecamp</span></a> is the project management tool you<br>wish you had on your last project.</h1>
+            <h3 class="hover-bc" id="hover-bc-shg">Are you still managing projects with email? Are you still using Excel for your to-do lists? It's time to upgrade to<br>Basecamp. Manage projects and collaborate with your team and clients the modern way.</h3>
+            <img src="arrow-left.png" alt="arrow-left" id="arrow-bc" class="hover-bc">
+            
+			<h1 class="hover-hr" id="hover-hr-hg"><a href="#"><span>Highrise</span></a> remembers the important things<br>about people you'd normally forget.</h1>
+            <h3 class="hover-hr" id="hover-hr-shg">Keep a permanent record of people you do business with. Know who you talked to, when you talked to them,<br>what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</h3>
+            <img src="arrow-left.png" alt="arrow-left" id="arrow-hr" class="hover-hr">
+            
+			<h1 class="hover-cf" id="hover-cf-hg">From near or far, <a href="#"><span>Campfire</span></a> helps teams work<br>together over the web in real-time.</h1>
+            <h3 class="hover-cf" id="hover-cf-shg">Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time<br>private chat room. It's game changing. We couldn't run our own business without Campfire.</h3>
+            <img src="arrow-right.png" alt="arrow-right" id="arrow-cf" class="hover-cf">
+
+        </div>
+
+
+    </div>
 
 
 
 <!--3 boxes-->
 
+
+
     <div class="three_boxes">
 
+        <div class="boxes", ID="bc">
 
-
-        <div class="bc">
             <h3><span class="label">Basecamp</span><sup>&#174;</sup></h3>
-            <img src="logo-bc.png" class="base"/>
-        
+            <img src="logo-bc.png" class="base" alt="bc"/>
             <h4 class="description">Manage Projects</h4>
-             <p class="blurb">Used by millions for project management.</p>
-        
-
-
+            <p ID="blurb-bc">Used by millions for project management.</p>
+      
          </div>
 
 
 
-         <div class="bc">
+         <div class="boxes", ID="hr">
+
             <h3><span class="label">Highrise</span><sup>&#174;</sup></h3>
-          
-      
             <img src="logo-hr.png" alt="rise"/>
             <h4 class="description">Manage Contacts</h4>
-        
-            <p class="blurb">Know the people you do business with.</p>
-        
-      
+            <p ID="blurb-hr">Know the people you do business with.</p>
+              
          </div>
 
-         <div class="bc">
+         <div class="boxes", ID="cf">
 
             <h3><span class="label">Campfire</span><sup>TM</sup></h3>
-            <img src="logo-cf.png" class="camp"/>
+            <img src="logo-cf.png" alt="cf" class="camp"/>
             <h4 class="description">Work in Real-Time</h4>
-        
-            <p class="blurb">Group chat rooms for your business.</p>
+            <p ID="blurb-cf">Group chat rooms for your business.</p>
         
         </div>   
 
@@ -110,13 +128,17 @@
 <!--bottom-->
 
 
-<div id="stars">
 
-    <hr>        
+        <div id="stars">
 
-</div>
+                <hr>        
+
+        </div>
+
+
 
 </body>
+
 
 
 </html>
